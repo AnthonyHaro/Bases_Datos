@@ -13,6 +13,8 @@ public class crud {
         modificarRegistroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(modificarRegistroButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new modificar().modi);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,6 +26,8 @@ public class crud {
         eliminarRegistroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(eliminarRegistroButton);
+                frames.dispose();
                 JFrame frame = new JFrame("base de datos");
                 frame.setContentPane(new eliminar().elim);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,6 +39,8 @@ public class crud {
         ingresarDatosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(ingresarDatosButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new registrar().regi);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,6 +52,8 @@ public class crud {
         buscarRegistroButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(buscarRegistroButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new buscar().busc);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

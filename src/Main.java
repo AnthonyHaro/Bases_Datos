@@ -5,6 +5,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Base de datos");
+        frame.dispose();
         frame.setContentPane(new crud().crud);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300,300);

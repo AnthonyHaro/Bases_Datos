@@ -14,6 +14,8 @@ public class eliminar {
         volverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new crud().crud);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
