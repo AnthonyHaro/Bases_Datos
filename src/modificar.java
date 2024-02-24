@@ -9,8 +9,14 @@ public class modificar {
     private JRadioButton empleadosRadioButton;
     private JRadioButton proveedoresRadioButton;
     private JRadioButton productosRadioButton;
+    private ButtonGroup buttonGroup;
 
     public modificar() {
+        buttonGroup = new ButtonGroup();
+        buttonGroup.add(productosRadioButton);
+        buttonGroup.add(proveedoresRadioButton);
+        buttonGroup.add(clientesRadioButton);
+        buttonGroup.add(empleadosRadioButton);
         volverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

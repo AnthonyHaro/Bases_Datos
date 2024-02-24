@@ -9,8 +9,15 @@ public class eliminar {
     private JRadioButton empleadosRadioButton;
     private JRadioButton proveedoresRadioButton;
     private JRadioButton productosRadioButton;
+    private ButtonGroup buttonGroup;
 
     public eliminar() {
+        buttonGroup = new ButtonGroup();
+        buttonGroup.add(productosRadioButton);
+        buttonGroup.add(proveedoresRadioButton);
+        buttonGroup.add(clientesRadioButton);
+        buttonGroup.add(empleadosRadioButton);
+
         volverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
