@@ -162,7 +162,7 @@ public class eliminar {
                 );
                 if (option == JOptionPane.OK_OPTION) {
                     String codigo = textField.getText();
-                    String sql= "Delete FROM Proveedor WHERE codigo_producto="+codigo;
+                    String sql= "Delete FROM Producto WHERE codigo_producto="+codigo;
                     Connection conexion = connector.obtenerConexion();
                     try {
                         PreparedStatement datos= conexion.prepareStatement(sql);
