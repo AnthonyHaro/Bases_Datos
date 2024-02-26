@@ -50,6 +50,8 @@ public class regis_prov {
         volverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new registrar().regi);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -17,6 +17,8 @@ public class registrar {
         volverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new crud().crud);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,6 +30,8 @@ public class registrar {
         clientesRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(clientesRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new regis_cli().reg);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,6 +43,8 @@ public class registrar {
         empleadosRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(empleadosRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new regis_emple().emple);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -50,6 +56,8 @@ public class registrar {
         proveedoresRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(proveedoresRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new regis_prov().proved);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -61,6 +69,8 @@ public class registrar {
         productosRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(productosRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new regis_produc().produc);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

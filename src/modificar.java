@@ -33,6 +33,8 @@ public class modificar {
         clientesRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(clientesRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new mofi_cli().client);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,6 +46,8 @@ public class modificar {
         empleadosRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(empleadosRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new mofi_emple().emple);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,6 +59,8 @@ public class modificar {
         proveedoresRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(proveedoresRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new modi_prov().prove);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -66,6 +72,8 @@ public class modificar {
         productosRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(productosRadioButton);
+                frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new modi_produc().prod);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

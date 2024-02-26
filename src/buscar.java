@@ -33,7 +33,7 @@ public class buscar {
         productosRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(productosRadioButton);
                 frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new Buscar_Produc().prod);
@@ -46,7 +46,7 @@ public class buscar {
         clientesRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(clientesRadioButton);
                 frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new Buscar_cli().buscar);
@@ -59,7 +59,7 @@ public class buscar {
         empleadosRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(empleadosRadioButton);
                 frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new Buscar_emple().emplea);
@@ -73,7 +73,7 @@ public class buscar {
         proveedoresRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(proveedoresRadioButton);
                 frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new Buscar_prov().prove);

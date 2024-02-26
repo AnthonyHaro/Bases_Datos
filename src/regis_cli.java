@@ -53,7 +53,7 @@ public class regis_cli {
         volverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(ingresarDatosButton);
+                JFrame frames = (JFrame) SwingUtilities.getWindowAncestor(volverButton);
                 frames.dispose();
                 JFrame frame = new JFrame("Base de datos");
                 frame.setContentPane(new registrar().regi);
